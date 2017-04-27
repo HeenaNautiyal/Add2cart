@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+  >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    android:id="@+id/lay1"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/dark"
+        android:clickable="true"
+        android:id="@+id/svadd"
+        android:drawableLeft="@drawable/location"
+        android:elevation="4dp"
+        android:padding="20dp"
+        android:text="Saved Address"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gradient2"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_city"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:hint="City"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_state"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:hint="State"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_pincode"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:hint="PinCode"
+            android:inputType="number"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_address"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="Home/Office full address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_mail2"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="Second mailid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+       
+        
+      
+       
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_numn"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:hint="Alternate Number"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="left"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/btn_continue"
+        android:background="@color/dark"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+</RelativeLayout>
